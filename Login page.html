@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--creating header-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<!--adding css-->
+<style>
+    header{background-color: black;}
+    h1{text-align: center; color: white;}
+    footer{background-color: black;}
+    h2{text-align: center; color: white;}
+</style>
+<body>
+    <header>
+    <h1>
+    Login Page
+    </h1>
+    </header>
+<form>
+    <label for="Username">Username:</label><br>
+    <input type = "text" id="Username" name="Username"><br><!--creating an input type name-->
+    
+    <label for="Email">Email:</label><br>
+    <input type="email" id="Email" name="email"><br>
+
+    <label for="Password">Password:</label><br>
+    <input type ="password" name="Password"><br><br>
+
+    <label for ="Date of Birth">Date of Birth:</label><br>
+    <input type="date" id="Age" name="DOB"><br><br>
+    
+    <label for ="Age">Age:</label><br>
+    <input type="number" id="Age" name="Age" onkeypress="return event.charCode >= 48" min="1" ><br><br><!--input type number with a condition to add only positive integers-->
+    <input type="hidden" id="Country_name" name="Country_name" value="India"><!--Creating a hidden field-->
+</form>
+<hr>
+<form>
+    <p>Select your level</p>
+    <input type="radio" name="level" value="Beginner">Beginner<br><br><!--creating input type radio-->
+    <input type="radio" name="level" value="Intermediate">Intermediate<br><br>
+    <input type="radio" name="level" value="Expert">Expert<br><br>
+
+</form>
+<hr>
+
+<form>
+    <p>Select the languages</p><br>
+    <input type="checkbox" name="language" value="Python">Python<br><br> <!--creating an input type checkbox-->
+    <input type="checkbox" name="language" value="C">C<br><br>
+    <input type="checkbox" name="language" value="C++">C++<br><br>
+    <input type="checkbox" name="language" value="Java">Java<br><br>
+    
+</form>
+
+    
+</body>
+<footer> <!--creating footer-->
+    <h2>End of Page</h2>
+</footer>
+</html>
