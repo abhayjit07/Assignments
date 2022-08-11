@@ -1,0 +1,54 @@
+<html>
+<head>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">Login Page</a>
+      </div>
+      <ul class="nav navbar-nav"></ul>
+    </div>
+  </nav>
+
+</head>
+<style>
+   body{border-style: double; border-radius: 10;}
+   nav{background-color:aquamarine; border-radius: 50; }
+   form{background-color:blanchedalmond; font-style: italic; font-weight: 300; opacity: 0.75;}
+   
+</style>
+<form>
+  <label for="Username">Username:</label><br>
+  <input type = "text" id="Username" name="Username"><br><!--creating an input type name-->
+  
+  <label for="Email">Email:</label><br>
+  <input type="email" id="Email" name="email"><br>
+
+  <label for="Password">Password:</label><br>
+  <input type ="password" name="Password"><br><br>
+
+  <label for ="Date of Birth">Date of Birth:</label><br>
+  <input type="date" id="Age" name="DOB"><br><br>
+  
+  <label for ="Age">Age:</label><br>
+  <input type="number" id="Age" name="Age" onkeypress="return event.charCode >= 48" min="1" ><br><br><!--input type number with a condition to add only positive integers-->
+  <input type="hidden" id="Country_name" name="Country_name" value="India"><!--Creating a hidden field-->
+</form>
+<hr>
+<form>
+  <p>Select your level</p>
+  <input type="radio" name="level" value="Beginner">Beginner<br><br><!--creating input type radio-->
+  <input type="radio" name="level" value="Intermediate">Intermediate<br><br>
+  <input type="radio" name="level" value="Expert">Expert<br><br>
+
+</form>
+<hr>
+
+<form>
+  <p>Select the languages</p><br>
+  <input type="checkbox" name="language" value="Python">Python<br><br> <!--creating an input type checkbox-->
+  <input type="checkbox" name="language" value="C">C<br><br>
+  <input type="checkbox" name="language" value="C++">C++<br><br>
+  <input type="checkbox" name="language" value="Java">Java<br><br>
+  
+</form>  
+</html>
